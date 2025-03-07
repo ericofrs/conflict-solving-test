@@ -20,7 +20,7 @@ print(summary_table)
 # Plot
 ggplot(mtcars, aes(x = hp, y = mpg, color = cyl_factor)) +
   geom_point(size = 3, alpha = 0.7) +
-  labs(title = "MPG vs. Horsepower",
+  labs(title = "MPG vs. Horsepower - Modifica Eduardo",
        x = "Horsepower (HP)",
        y = "Miles Per Gallon (MPG)",
        color = "Cylinders") +
