@@ -18,10 +18,9 @@ summary_table <- mtcars %>%
 print(summary_table)
 
 # Plot
-ggplot(mtcars, aes(x = hp, y = mpg, color = cyl_factor)) +
-  geom_point(size = 3, alpha = 0.7) +
-  labs(title = "MPG vs. Horsepower",
-       x = "Horsepower (HP)",
-       y = "Miles Per Gallon (MPG)",
-       color = "Cylinders") +
+ggplot(mtcars, aes(x = cyl_factor, y = mpg, fill = cyl_factor)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(title = "MPG Distribution by Cylinder Count",
+       x = "Cylinders",
+       y = "Miles Per Gallon (MPG)") +
   theme_minimal()
